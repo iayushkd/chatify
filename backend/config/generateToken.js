@@ -1,9 +1,9 @@
 const jwt = require('jsonwebtoken')
 
-const secret = "suvankar"
+const secret = "ayush"
 
 const generateToken = (id) => {
-  return jwt.sign({id},secret,{
+  return jwt.sign({ id }, secret, {
     expiresIn: "30d",
   })
 }
