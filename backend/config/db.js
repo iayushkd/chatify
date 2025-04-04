@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
-const connectDB = async() => {
+const connectDB = async () => {
   try {
-    const conn = await mongoose.connect("mongodb+srv://suvankarchowdhury:yQn20Er6MHk7jJXb@cluster1.02vvc5c.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1");
+    const conn = await mongoose.connect("mongodb://localhost:27017/chat-app");
     console.log(`MongoDB connected: ${conn.connection.host}`);
   }
-  catch(error) {
+  catch (error) {
     console.log(`Error: ${error.message}`);
     process.exit();
   }

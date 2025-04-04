@@ -5,7 +5,7 @@
   "scripts": {
     "start": "nodemon backend/server.js"
   },
-  "author": "suvankar chowdhury",
+  "author": "Ayush",
   "license": "ISC",
   "description": "",
   "dependencies": {
